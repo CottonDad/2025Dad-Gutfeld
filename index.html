@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Taping Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .ticket-container {
+            display: flex;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            max-width: 700px;
+            width: 100%;
+        }
+        .ticket-left {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ticket-left h2 {
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        .ticket-left p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+        .ticket-left img {
+            margin-top: 10px;
+            width: 100px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .ticket-right {
+            padding: 20px;
+            width: 70%;
+        }
+        .ticket-right h1 {
+            font-size: 28px;
+            margin: 0 0 10px;
+        }
+        .ticket-right p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .ticket-right .info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .ticket-right .info div {
+            text-align: center;
+        }
+        .barcode {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .barcode img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket-container">
+        <div class="ticket-left">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ffc%2FGutfeld_(talk_show)_logo.png%2F440px-Gutfeld_(talk_show)_logo.png&f=1&nofb=1&ipt=4e6858f7a8804d4d8174fb578d0e57517bc97141f27bf568ef8e4e73636b1e2e&ipo=images" alt="Placeholder Image">
+            <h2>Admit One</h2>
+            <p>Exclusive Access</p>
+	</div>
+        <div class="ticket-right">
+            <h1>Gutfeld!</h1>
+            <p><strong>Location:</strong> Fox Studios, Sixth Avenue, NYC</p>
+            <p><strong>Date:</strong> SOON!</p>
+            <p><strong>Time:</strong> 12:30PM</p>
+            <p><strong>Guest:</strong> Dean Cotton</p>
+            
+            <div class="info">
+                <div>
+                    <strong>Section</strong>
+                    <p>VIP</p>
+                </div>
+                <div>
+                    <strong>Row</strong>
+                    <p>12</p>
+                </div>
+                <div>
+                    <strong>Seat</strong>
+                    <p>25</p>
+                </div>
+            </div>
+            <div class="barcode">
+                <img src="https://cdn.britannica.com/57/43857-050-9250A718/bar-code.jpg" alt="Barcode">
+                <p>Scan for Entry</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

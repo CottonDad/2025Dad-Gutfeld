@@ -83,6 +83,19 @@
     </style>
 </head>
 <body>
+	 <!-- Audio element -->
+    <audio id="newsTheme" autoplay>
+        <source src="path_to_fox_news_theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        // Attempt to play the audio when the page loads
+        const audio = document.getElementById('newsTheme');
+        audio.play().catch(error => {
+            console.error("Autoplay was prevented:", error);
+        });
+    </script>
     <div class="ticket-container">
         <div class="ticket-left">
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ffc%2FGutfeld_(talk_show)_logo.png%2F440px-Gutfeld_(talk_show)_logo.png&f=1&nofb=1&ipt=4e6858f7a8804d4d8174fb578d0e57517bc97141f27bf568ef8e4e73636b1e2e&ipo=images" alt="Placeholder Image">
